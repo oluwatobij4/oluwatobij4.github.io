@@ -1,86 +1,603 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olutade Ogundele Website</title>
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">Olutade</a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">
+                            <i class="fas fa-home nav-link-icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <i class="fas fa-file-alt nav-link-icon"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#qualification" class="nav-link">
+                            <i class="fas fa-envelope nav-link-icon"></i> Qualifications
+                        </a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">
+                            <i class="fas fa-image nav-link-icon"></i> Portfolio
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="fas fa-envelope nav-link-icon"></i> Contactme
+                        </a>
+                    </li>
+                    
+                </ul>
+                <i class="fas fa-times nav-close" id="nav-close"></i>
+            </div>
+            <div class="nav-btns">
+
+                <!-- Theme change button -->
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- HOME -->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content grid">
+                    <div class="home-social">
+                        <a href="https://www.linkedin.com/" target="_blank" class="home-social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://dribbble.com/" target="_blank" class="home-social-icon">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="home-social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="home-img">
+                        <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home-blob-img" x='12' y='18' xlink:href="img/profilepic.jpg" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home-data">
+                        <h1 class="home-data-title">Hi! I am Olutade</h1>
+                        <h3 class="home-data-subtitle">Data Engineer</h3>
+                        <p class="home-data-description"> Analytical professional who is up for exciting challenges in the Data pipeline processes and analysis ecosystem...Also creates Data comics!</p>
+                        <a href="#contact" class="button button-flex">
+                            Contact Me <i class="fab fa-telegram-plane button-icon"></i>
+                        </a>
+                        <br></br>
+                        <a download="" href="pdf/Alexa-Cv.pdf" class="button button-flex">
+                            Download CV <i class="fas fa-download button-icon"></i>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="home-scroll">
+                    <a href="#about" class="home-scroll-button button-flex">
+                        <span class="home-scroll-button-name">Scroll down</span>
+                        <i class="fas fa-arrow-down home-scroll-button-arrow"></i>
+                    </a>
+                    
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+
+               <!-- SKILLS -->
+               <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <span class="section-subtitle">click drop down to view Tech stack</span>
+    
+                <div class="skills-container container grid">
+                    <div>
+                        <!-- SKILLS 1 -->
+                        <div class="skills-container-content skills-open">
+    
+                            <div class="skills-container-header">
+                                <i class="fas fa-code skills-icon"></i>
+                                <div>
+                                    <h1 class="skills-title">Programming</h1>
+                            
+                                </div>
+                                <i class="fas fa-angle-down skills-arrow"></i>
+                            </div>
+    
+                            <div class="skills-list grid">
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Python</h3>
+                                        <span class="skills-number">90%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-html"></span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">SQL</h3>
+                                        <span class="skills-number">80%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-css"></span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">dbt</h3>
+                                        <span class="skills-number">60%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-js"></span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">HTML</h3>
+                                        <span class="skills-number">85%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-react"></span>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <!-- SKILLS 2 -->
+                        <div class="skills-container-content skills-close">
+    
+                            <div class="skills-container-header">
+                                <i class="fas fa-server skills-icon"></i>
+                                <div>
+                                    <h1 class="skills-title">ETL design, implementation and maintenance</h1>
+                                    
+                                </div>
+                                <i class="fas fa-angle-down skills-arrow"></i>
+                            </div>
+    
+                            <div class="skills-list grid">
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Data pipeline architecture</h3>
+                                        <span class="skills-number">80%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-php"></span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Automated web extraction</h3>
+                                        <span class="skills-number">80%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-node"></span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name"> Data pipeline process</h3>
+                                        <span class="skills-number">90%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-firebase"></span>
+                                    </div>
+                                </div>
+
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div>
+                        <!-- SKILLS 3 -->
+                        <div class="skills-container-content skills-close">
+    
+                            <div class="skills-container-header">
+                                <i class="fas fa-swatchbook skills-icon"></i>
+                                <div>
+                                    <h1 class="skills-title">Business Intelligence</h1>
+                                    
+                                </div>
+                                <i class="fas fa-angle-down skills-arrow"></i>
+                            </div>
+    
+                            <div class="skills-list grid">
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Power BI</h3>
+                                        <span class="skills-number">90%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-figma"></span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name"> Data Visualization</h3>
+                                        <span class="skills-number">85%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-sketch"></span>
+                                    </div>
+                                </div>
+    
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Business Analysis
+
+                                        </h3>
+                                        <span class="skills-number">85%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-ps"></span>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+      
+
+        <!-- QUALIFICATION -->
+        <section class="qualification section" id = "qualification">
+            <h2 class="section-title">Qualifications</h2>
             
-        </header>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+            <div class="qualification-container container">
+                <div class="qualification-tabs">
+                    <div class="qualification-tabs-button button-flex qualification-active" data-target="#education">
+                        <i class="fas fa-graduation-cap qualification-icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification-tabs-button button-flex" data-target="#work">
+                        <i class="fas fa-briefcase qualification-icon"></i>
+                        Work
+                    </div>
+                </div>
+                <div class="qualification-sections">
+                    <!-- QUALIFICATION CONTENT 1 -->
+                    <div class="qualification-content qualification-active" data-content id="education">
+                        <!-- QUALIFICATION 1 -->
+                        <div class="qualification-data">
+                            <div class="qualification-data-alt">
+                                <h3 class="qualification-title">Electrical Engineer</h3>
+                                <span class="qualification-subtitle">Obafemi Awolowo University</span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2010 - 2015
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
+                        </div>
+                        <!-- QUALIFICATION 2 -->
+                        <div class="qualification-data">
+                            <div></div>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+                            <div class="qualification-data-alt">
+                                <h3 class="qualification-title">python</h3>
+                                <span class="qualification-subtitle"> udemy</span>
+    
+    
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2019
+                                </div>
+                            </div>
+                        </div>
+                        <!-- QUALIFICATION 3 -->
+                        <div class="qualification-data">
+                            <div class="qualification-data-alt">
+                                <h3 class="qualification-title">AWS cloud practitioner</h3>
+                                <span class="qualification-subtitle">AWS</span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2021
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
+                        </div>
+                        <!-- QUALIFICATION 4 -->
+                        <div class="qualification-data">
+                            <div></div>
 
-            </section>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <!-- <span class="qualification-line"></span> -->
+                            </div>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+                            <div class="qualification-data-alt">
+                                <h3 class="qualification-title">dbt Fundamentals</h3>
+                                <span class="qualification-subtitle">dbt Labs</span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            </section>
+                    <!-- QUALIFICATION CONTENT 2 -->
+                    <div class="qualification-content" data-content id="work">
+                        <!-- QUALIFICATION 1 -->
+                        <div class="qualification-data">
+                            <div class="qualification-data-alt">
+                                <h3 class="qualification-title">Data Analyst</h3>
+                                <span class="qualification-subtitle"> Vesicash - Nigeria</span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2020 - 2021
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
+                        </div>
+                        <!-- QUALIFICATION 2 -->
+                        <div class="qualification-data">
+                            <div></div>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+                            <div class="qualification-data-alt">
+                                <h3 class="qualification-title">Data Analyst</h3>
+                                <span class="qualification-subtitle">Watt Renewables - Nigeria</span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2021
+                                </div>
+                            </div>
+                        </div>
+                        <!-- QUALIFICATION 3 -->
+                        <div class="qualification-data">
+                            <div class="qualification-data-alt">
+                                <h3 class="qualification-title">Data Executive</h3>
+                                <span class="qualification-subtitle">YouGov - United Kingdom</span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2022 - present
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <!-- <span class="qualification-line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
+        <!-- SERVICES -->
         
-        <!--==================== SCROLL TOP ====================-->
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-subtitle">Most recent work</span>
+
+            <div class="portfolio-container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- PORTFOLIO 1 -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/web scraping.jpg" alt="Portfolio" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title"> Automated web extraction</h3>
+                            <p class="portfolio-description">Web scraping with Selenium: Why your code works but returns an empty list still.</p>
+                            <a href="https://medium.com/analytics-vidhya/web-scraping-with-selenium-why-your-code-works-but-returns-an-empty-list-still-f736cbe761a2" class="button button-flex button-small portfolio-button">
+                                Here <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO 2 -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/covid map.jpg" alt="Portfolio" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Covid-19 live update map</h3>
+                            <p class="portfolio-description"> How I Used pandas and folium to Bring the Covid-19 Updates around the World closer and Accessible to You in 5 Steps.</p>
+                            <a href="https://medium.com/analytics-vidhya/how-i-used-pandas-and-folium-to-bring-the-covid-19-updates-around-the-world-closer-and-accessible-dbe580443fc7" class="button button-flex button-small portfolio-button">
+                                Here <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PORTFOLIO 3 -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/titanic map.jpg" alt="Portfolio" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Exploratory Data Analysis</h3>
+                            <p class="portfolio-description">Exploratory data Analysis of the Titanic data set: Why the Titanic story is more than just a love story.</p>
+                            <a href="https://medium.com/analytics-vidhya/exploratory-data-analysis-of-the-titanic-data-set-why-the-titanic-story-is-more-than-just-a-love-13ca52deb9ba" class="button button-flex button-small portfolio-button">
+                                Here <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrow -->
+                <div class="swiper-button-next">
+                    <i class="fas fa-angle-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fas fa-angle-left swiper-portfolio-icon"></i>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
         
 
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <!-- CONTACT ME -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-subtitle">Get in touch</span>
 
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+            <div class="contact-container container grid">
+                <div class="contact-items">
+                    <div class="contact-information">
+                        <i class="far fa-envelope contact-icon"></i>
+
+                        <div>
+                            <h3 class="contact-title">Email</h3>
+                            <span class="contact-subtitle">tadeogundele@email.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-information">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+
+                        <div>
+                            <h3 class="contact-title">Location</h3>
+                            <span class="contact-subtitle">London - United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact-form grid">
+                    <div class="contact-inputs grid">
+                        <div class="contact-content">
+                            <label for="" class="contact-label">Name</label>
+                            <input type="text" class="contact-input">
+                        </div>
+                        <div class="contact-content">
+                            <label for="" class="contact-label">Email</label>
+                            <input type="email" class="contact-input">
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="contact-content">
+                            <label for="" class="contact-label">Project</label>
+                            <input type="text" class="contact-input">
+                        </div>
+                        <div class="contact-content">
+                            <label for="" class="contact-label">Message</label>
+                            <textarea style="resize: none;" rows="5" class="contact-input"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <div class="contact-button">
+                    <a href="#" class="button button-flex">
+                        Send Message <i class="fab fa-telegram-plane button-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-container container grid">
+                <div class="footer-texts">
+                    <h1 class="footer-title">Olutade</h1>
+                    <span class="footer-subtitle">Data Engineer</span>
+                </div>
+
+                <ul class="footer-links">
+        
+                    <li>
+                        <a href="#portfolio" class="footer-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer-link">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copy">&#169; Bekir Erdem. All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup-icon"></i>
+    </a>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/027d3564f6.js" crossorigin="anonymous"></script>
+
+    <!-- SWIPER JS -->
+    <script src="js/swiper-bundle.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
